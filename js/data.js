@@ -6,7 +6,7 @@ let productos = [
      price: 200},
      {id:2,
      name: 'Pantalon',
-     image: 'http://assets.stickpng.com/images/580b57fbd9996e24bc43bf36.png',
+     image: 'https://png.pngtree.com/png-vector/20201127/ourlarge/pngtree-ladies-jeans-png-image_2400806.jpg',
      price: 150},
      {id:3,
      name: 'Tenis',
