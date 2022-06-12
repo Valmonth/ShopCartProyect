@@ -19,15 +19,30 @@ function showProducts(pp){
                   </div>`       
      }
      const container = document.getElementById('product-list');
-     console.log(container)
      container.innerHTML = products;
 }
 
 showProducts();
 
+/* get item and stores in localStorage */
 function getIdProduct(id){
-    console.log(id);
+    let item = productos.find(item => item.id == id);
+    let cart = localStorage.getItem('cart');
+    cart = JSON.parse(cart);
+    if(cart == null){
+        cart = [];
+    }
+    cart.push(item);
+    localStorage.setItem('cart', JSON.stringify(cart));
+    alert('Producto agregado al carrito');
 }
+
+
+
+
+/* function getIdProduct(id){
+    console.log(id);
+} */
 
 window.showProducts = showProducts;
 window.getIdProduct = getIdProduct;
